@@ -12,7 +12,8 @@
 <% end %>
 
 <br>
-<%= link_to "Add review", new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+<%#= link_to "Add review", new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+<%= render "reviews/form", restaurant: @restaurant, review: @review  %>
 <br>
 <br>
 <%= link_to "Restaurant index", restaurants_path, class: "btn btn-primary" %>
